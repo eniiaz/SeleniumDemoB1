@@ -1,0 +1,30 @@
+TS10: Verify price tags of the product
+Summary: Verify prices have $ sign in front
+
+1. Go to Sauce Demo app
+2. Login to Application
+3. Get all the Prices for all products
+4. Verify they all have "$" in the beginning
+
+Expected: Each price MUST have "$"
+
+Test data:
+username: standard_user
+password: secret_sauce
+
+
+____________________________________
+
+TS11: Verify shopping cart add item amount
+Summary: Verify adding the items to cart is working
+
+1. Go to Sauce Demo app
+2. Login to Application
+3. Add any product from the list
+4. Verify if cart items number is changing
+
+Expected: On Cart icon, it must show "1"
+
+Test data:
+username: standard_user
+password: secret_sauce
