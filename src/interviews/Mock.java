@@ -8,5 +8,6 @@ public class Mock {
         Random random = new Random();
 
         System.out.println(random.nextInt(35));
+
     }
 }
