@@ -14,7 +14,7 @@ public class BankLogin {
         WebElement bank = driver.findElement(By.linkText("Bank Project"));
         bank.click();
 
-        Thread.sleep(2000);
+        Thread.sleep(4000);
 
         WebElement username = driver.findElement(By.name("uid"));
         WebElement password = driver.findElement(By.name("password"));
@@ -33,6 +33,12 @@ public class BankLogin {
         else {
             System.out.println("FAILED");
         }
+
+        driver.findElement(By.linkText("New Customer")).click();
+        WebElement date = driver.findElement(By.id("dob"));
+        date.sendKeys("02/15/2023");
+
+
 
     }
 }
