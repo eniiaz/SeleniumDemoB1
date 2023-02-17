@@ -22,7 +22,6 @@ public class Windows {
 
         System.out.println(driver.getTitle());
         System.out.println(driver.getWindowHandle());
-
-
+        
     }
 }
