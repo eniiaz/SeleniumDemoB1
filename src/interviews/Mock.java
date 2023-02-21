@@ -6,7 +6,7 @@ public class Mock {
 
     public static void main(String[] args) {
         Random random = new Random();
-        System.out.println(random.nextInt(35));
-
+        System.out.println("Student: " + random.nextInt(40));
+        System.out.println("Question: " + random.nextInt(19));
     }
 }
