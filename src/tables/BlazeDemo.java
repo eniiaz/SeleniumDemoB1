@@ -22,6 +22,7 @@ public class BlazeDemo {
         System.out.println(getTableData(5, 3).getText());
 
         String expectedPrice = "$200.98";
+
         if (getTableData(3,6).getText().equals(expectedPrice)){
             System.out.println("PASSED");
         }else{
@@ -53,6 +54,7 @@ public class BlazeDemo {
     }
 
     public static WebElement getTableData(int row, int column){
+        //table[@class='table']/tbody/tr[1]/td[2]
         String xpath = "//table[@class='table']/tbody/tr[" + row + "]/td[" + column + "]";
         WebElement data = driver.findElement(By.xpath(xpath));
         return data;
